@@ -218,8 +218,9 @@ input[type="radio"].visually-hidden {
 }
 
 .slider .button:active {
+  color: #e37376;
   background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 .services {
@@ -296,8 +297,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item:nth-child(n) .button:active {
+  color: #e37376;
   background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 .services-item:nth-child(2n) .button {
@@ -310,8 +312,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item:nth-child(2n) .button:active {
+  color: #4dc491;
   background-color: #00aa62;
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 .services-item:nth-child(3n) .button {
@@ -324,8 +327,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item:nth-child(3n) .button:active {
+  color: #edc265;
   background-color: #e5a722;
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 .about-columns {
@@ -548,8 +552,9 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-container .button:active {
+  color: #e37376;
   background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
 .main-footer {
@@ -587,7 +592,11 @@ input[type="radio"].visually-hidden {
 
 .social-list a:active {
   background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+.social-list a:active path {
+  fill: #e37376;
 }
 
 .social-vk .container-svg {
@@ -622,4 +631,161 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   line-height: 22px;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50px;
+
+  width: 760px;
+  margin-left: -480px;
+  padding: 68px 100px;
+  padding-bottom: 85px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.modal h2 {
+  margin: 0;
+  margin-bottom: 38px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.mail-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mail-form p {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.mail-form label {
+  display: block;
+  margin-bottom: 9px;
+
+  font-weight: 700;
+}
+
+.mail-form input,
+.mail-form textarea {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 14px;
+
+  font: inherit;
+  color: #000;
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.mail-form input::placeholder,
+.mail-form textarea::placeholder {
+  color: #d7dcde;
+}
+
+.mail-form textarea {
+  width: 760px;
+  height: 118px;
+
+  resize: none;
+}
+
+.mail-form input:hover, 
+.mail-form textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.mail-form input:hover::placeholder,
+.mail-form textarea:hover::placeholder {
+  color: #b4b9bb;
+}
+
+.mail-form input:active, 
+.mail-form textarea:active {
+  border: 2px solid #000;
+}
+
+.mail-form input:invalid, 
+.mail-form textarea:invalid {
+  border: 2px solid #e74246;
+}
+
+.mail-form .button {
+  padding: 17px 80px;
+
+  border: 0;
+  
+  font: inherit;
+}
+
+.mail-form .button:hover,
+.mail-form .button:focus {
+  background-color: #e74246;
+}
+
+.mail-form .button:active {
+  color: #e37376;
+  background-color: #d7373b;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+.modal-close {
+  position: absolute;
+  right: 90px;
+  top: 78px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  /* right: 0; */
+  left: -3px;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  background-color: #fb565a;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  background-color: #ffeeee;
 }
