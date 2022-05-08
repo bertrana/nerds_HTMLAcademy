@@ -80,6 +80,8 @@ input[type="radio"].visually-hidden {
   
   width: 160px;
   height: 65px;
+
+  cursor: pointer;
 }
 
 .main-navigation .logo:hover,
@@ -162,6 +164,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  min-height: 430px;
   display: none;
 }
 
@@ -245,6 +248,14 @@ input[type="radio"].visually-hidden {
   margin-right: 17px;
 
   background-color: #fff;
+  border-radius: 50%;
+}
+
+.carousel-navigation .pin:not(.pin-current):hover,
+.carousel-navigation .pin:not(.pin-current):focus {
+  cursor: pointer;
+  
+  border: 3px solid #c1c1c1;
   border-radius: 50%;
 }
 
@@ -582,6 +593,8 @@ input[type="radio"].visually-hidden {
 
 .contacts-container .button {
   padding: 18px 45px;
+  
+  cursor: pointer;
 }
 
 .contacts-container .button:focus,
@@ -765,8 +778,8 @@ input[type="radio"].visually-hidden {
   padding: 17px 80px;
 
   border: 0;
-  
   font: inherit;
+  cursor: pointer;
 }
 
 .mail-form .button:hover,

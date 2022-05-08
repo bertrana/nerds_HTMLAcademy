@@ -1,0 +1,29 @@
+h1 {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 110px;
+
+  text-align: center;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+
+  background-color: #eeeeee;
+}
+
+.catalog-columns {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.catalog-filter {
+  width: 260px;
+}
+
+.catalog-sort {
+  width: 760px;
+}
